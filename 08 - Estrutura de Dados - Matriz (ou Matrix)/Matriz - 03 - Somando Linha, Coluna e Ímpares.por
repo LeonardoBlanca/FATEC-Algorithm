@@ -49,14 +49,16 @@ programa
 		// Somando as colunas
 		escreva("\n---------------------------------------\n")
 		escreva("Soma das colunas:\n")
-		para(i = 0; i < 4; i++)
+		para(j = 0; j < 3; j++)
 		{
-			para(j = 0; j < 3; j++)
+			// Zerando o valor da coluna
+			somaColuna = 0
+			para(i = 0; i < 3; i++)
 			{
 				// itero primeiro sobre a coluna (j) e travo a linha (i)
-				somaColuna += mat[j][i]
+				somaColuna += mat[i][j]
 			}
-			escreva("A soma da coluna ", i + 1, " é de: ", somaColuna, "\n")
+			escreva("A soma da coluna ", j, " é de: ", somaColuna, "\n")
 		}
 
 		// Soma das linhas
@@ -64,14 +66,15 @@ programa
 		escreva("A soma das linhas: \n")
 		para(i = 0; i < 3; i++)
 		{
+			// Zerando o valor da somaLinha
+			somaLinha = 0
+			
 			para(j = 0; j < 4; j++)
 			{
 				// itero primeiro sobre a coluna (j) e travo a linha (i)
 				somaLinha += mat[i][j]
 			}
 			escreva("A soma da linha ", i + 1, " é de: ", somaLinha, "\n")
-			// Zerando o valor da somaLinha
-			somaLinha = 0
 		}
 		
 	}
@@ -81,7 +84,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 767; 
+ * @POSICAO-CURSOR = 1714; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -70,15 +70,8 @@ programa
 			// mat[0][0], mat[1][1], mat[2][2], mat[3][3] e assim vai
 			escreva(mat[l][l], " ")
 		}
-
-		escreva("\n\n")
-		escreva("Imprimindo a diagonal Secundária em linha: \n")
-	
-		para(l = 0; l < 5; l++)
-		{
-			escreva(mat[l][5 - 1 - l], " ")
-		}
 		escreva("\n--------------------------------------------\n")
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -86,7 +79,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1609; 
+ * @POSICAO-CURSOR = 1539; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
